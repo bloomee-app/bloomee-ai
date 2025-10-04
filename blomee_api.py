@@ -74,13 +74,13 @@ async def lifespan(app: FastAPI):
             if model_path.exists() and preprocessor_path.exists():
                 models[region_id] = joblib.load(model_path)
                 preprocessors[region_id] = joblib.load(preprocessor_path)
-                print(f"✅ Loaded model for {config['name']}")
+                print(f"Loaded model for {config['name']}")
             else:
-                print(f"⚠️ Model files not found for {config['name']}")
+                print(f"Model files not found for {config['name']}")
         except Exception as e:
-            print(f"❌ Error loading {config['name']}: {str(e)}")
+            print(f"Error loading {config['name']}: {str(e)}")
 
-    print(f"\n✅ Loaded {len(models)} models successfully!")
+    print(f"Loaded {len(models)} models successfully!")
     yield
     print("Shutting down ...")
 
