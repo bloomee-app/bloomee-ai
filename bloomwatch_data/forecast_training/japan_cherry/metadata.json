@@ -1,0 +1,461 @@
+{
+  "name": "Japan Cherry Kansai: Kyoto / Osaka cherry blossoms",
+  "description": "Main cherry blossom viewing areas in Japan",
+  "bbox": [
+    [
+      [
+        135.2,
+        34.4
+      ],
+      [
+        136.2,
+        34.4
+      ],
+      [
+        136.2,
+        35.3
+      ],
+      [
+        135.2,
+        35.3
+      ],
+      [
+        135.2,
+        34.4
+      ]
+    ]
+  ],
+  "image_count": 86,
+  "files": [
+    {
+      "date": "2022-01-01",
+      "filename": "ndvi_2022-01-01.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2022-01-01.tif"
+    },
+    {
+      "date": "2022-01-17",
+      "filename": "ndvi_2022-01-17.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2022-01-17.tif"
+    },
+    {
+      "date": "2022-02-02",
+      "filename": "ndvi_2022-02-02.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2022-02-02.tif"
+    },
+    {
+      "date": "2022-02-18",
+      "filename": "ndvi_2022-02-18.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2022-02-18.tif"
+    },
+    {
+      "date": "2022-03-06",
+      "filename": "ndvi_2022-03-06.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2022-03-06.tif"
+    },
+    {
+      "date": "2022-03-22",
+      "filename": "ndvi_2022-03-22.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2022-03-22.tif"
+    },
+    {
+      "date": "2022-04-07",
+      "filename": "ndvi_2022-04-07.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2022-04-07.tif"
+    },
+    {
+      "date": "2022-04-23",
+      "filename": "ndvi_2022-04-23.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2022-04-23.tif"
+    },
+    {
+      "date": "2022-05-09",
+      "filename": "ndvi_2022-05-09.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2022-05-09.tif"
+    },
+    {
+      "date": "2022-05-25",
+      "filename": "ndvi_2022-05-25.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2022-05-25.tif"
+    },
+    {
+      "date": "2022-06-10",
+      "filename": "ndvi_2022-06-10.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2022-06-10.tif"
+    },
+    {
+      "date": "2022-06-26",
+      "filename": "ndvi_2022-06-26.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2022-06-26.tif"
+    },
+    {
+      "date": "2022-07-12",
+      "filename": "ndvi_2022-07-12.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2022-07-12.tif"
+    },
+    {
+      "date": "2022-07-28",
+      "filename": "ndvi_2022-07-28.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2022-07-28.tif"
+    },
+    {
+      "date": "2022-08-13",
+      "filename": "ndvi_2022-08-13.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2022-08-13.tif"
+    },
+    {
+      "date": "2022-08-29",
+      "filename": "ndvi_2022-08-29.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2022-08-29.tif"
+    },
+    {
+      "date": "2022-09-14",
+      "filename": "ndvi_2022-09-14.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2022-09-14.tif"
+    },
+    {
+      "date": "2022-09-30",
+      "filename": "ndvi_2022-09-30.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2022-09-30.tif"
+    },
+    {
+      "date": "2022-10-16",
+      "filename": "ndvi_2022-10-16.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2022-10-16.tif"
+    },
+    {
+      "date": "2022-11-01",
+      "filename": "ndvi_2022-11-01.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2022-11-01.tif"
+    },
+    {
+      "date": "2022-11-17",
+      "filename": "ndvi_2022-11-17.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2022-11-17.tif"
+    },
+    {
+      "date": "2022-12-03",
+      "filename": "ndvi_2022-12-03.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2022-12-03.tif"
+    },
+    {
+      "date": "2022-12-19",
+      "filename": "ndvi_2022-12-19.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2022-12-19.tif"
+    },
+    {
+      "date": "2023-01-01",
+      "filename": "ndvi_2023-01-01.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2023-01-01.tif"
+    },
+    {
+      "date": "2023-01-17",
+      "filename": "ndvi_2023-01-17.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2023-01-17.tif"
+    },
+    {
+      "date": "2023-02-02",
+      "filename": "ndvi_2023-02-02.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2023-02-02.tif"
+    },
+    {
+      "date": "2023-02-18",
+      "filename": "ndvi_2023-02-18.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2023-02-18.tif"
+    },
+    {
+      "date": "2023-03-06",
+      "filename": "ndvi_2023-03-06.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2023-03-06.tif"
+    },
+    {
+      "date": "2023-03-22",
+      "filename": "ndvi_2023-03-22.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2023-03-22.tif"
+    },
+    {
+      "date": "2023-04-07",
+      "filename": "ndvi_2023-04-07.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2023-04-07.tif"
+    },
+    {
+      "date": "2023-04-23",
+      "filename": "ndvi_2023-04-23.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2023-04-23.tif"
+    },
+    {
+      "date": "2023-05-09",
+      "filename": "ndvi_2023-05-09.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2023-05-09.tif"
+    },
+    {
+      "date": "2023-05-25",
+      "filename": "ndvi_2023-05-25.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2023-05-25.tif"
+    },
+    {
+      "date": "2023-06-10",
+      "filename": "ndvi_2023-06-10.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2023-06-10.tif"
+    },
+    {
+      "date": "2023-06-26",
+      "filename": "ndvi_2023-06-26.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2023-06-26.tif"
+    },
+    {
+      "date": "2023-07-12",
+      "filename": "ndvi_2023-07-12.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2023-07-12.tif"
+    },
+    {
+      "date": "2023-07-28",
+      "filename": "ndvi_2023-07-28.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2023-07-28.tif"
+    },
+    {
+      "date": "2023-08-13",
+      "filename": "ndvi_2023-08-13.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2023-08-13.tif"
+    },
+    {
+      "date": "2023-08-29",
+      "filename": "ndvi_2023-08-29.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2023-08-29.tif"
+    },
+    {
+      "date": "2023-09-14",
+      "filename": "ndvi_2023-09-14.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2023-09-14.tif"
+    },
+    {
+      "date": "2023-09-30",
+      "filename": "ndvi_2023-09-30.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2023-09-30.tif"
+    },
+    {
+      "date": "2023-10-16",
+      "filename": "ndvi_2023-10-16.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2023-10-16.tif"
+    },
+    {
+      "date": "2023-11-01",
+      "filename": "ndvi_2023-11-01.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2023-11-01.tif"
+    },
+    {
+      "date": "2023-11-17",
+      "filename": "ndvi_2023-11-17.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2023-11-17.tif"
+    },
+    {
+      "date": "2023-12-03",
+      "filename": "ndvi_2023-12-03.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2023-12-03.tif"
+    },
+    {
+      "date": "2023-12-19",
+      "filename": "ndvi_2023-12-19.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2023-12-19.tif"
+    },
+    {
+      "date": "2024-01-01",
+      "filename": "ndvi_2024-01-01.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2024-01-01.tif"
+    },
+    {
+      "date": "2024-01-17",
+      "filename": "ndvi_2024-01-17.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2024-01-17.tif"
+    },
+    {
+      "date": "2024-02-02",
+      "filename": "ndvi_2024-02-02.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2024-02-02.tif"
+    },
+    {
+      "date": "2024-02-18",
+      "filename": "ndvi_2024-02-18.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2024-02-18.tif"
+    },
+    {
+      "date": "2024-03-05",
+      "filename": "ndvi_2024-03-05.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2024-03-05.tif"
+    },
+    {
+      "date": "2024-03-21",
+      "filename": "ndvi_2024-03-21.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2024-03-21.tif"
+    },
+    {
+      "date": "2024-04-06",
+      "filename": "ndvi_2024-04-06.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2024-04-06.tif"
+    },
+    {
+      "date": "2024-04-22",
+      "filename": "ndvi_2024-04-22.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2024-04-22.tif"
+    },
+    {
+      "date": "2024-05-08",
+      "filename": "ndvi_2024-05-08.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2024-05-08.tif"
+    },
+    {
+      "date": "2024-05-24",
+      "filename": "ndvi_2024-05-24.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2024-05-24.tif"
+    },
+    {
+      "date": "2024-06-09",
+      "filename": "ndvi_2024-06-09.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2024-06-09.tif"
+    },
+    {
+      "date": "2024-06-25",
+      "filename": "ndvi_2024-06-25.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2024-06-25.tif"
+    },
+    {
+      "date": "2024-07-11",
+      "filename": "ndvi_2024-07-11.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2024-07-11.tif"
+    },
+    {
+      "date": "2024-07-27",
+      "filename": "ndvi_2024-07-27.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2024-07-27.tif"
+    },
+    {
+      "date": "2024-08-12",
+      "filename": "ndvi_2024-08-12.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2024-08-12.tif"
+    },
+    {
+      "date": "2024-08-28",
+      "filename": "ndvi_2024-08-28.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2024-08-28.tif"
+    },
+    {
+      "date": "2024-09-13",
+      "filename": "ndvi_2024-09-13.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2024-09-13.tif"
+    },
+    {
+      "date": "2024-09-29",
+      "filename": "ndvi_2024-09-29.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2024-09-29.tif"
+    },
+    {
+      "date": "2024-10-15",
+      "filename": "ndvi_2024-10-15.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2024-10-15.tif"
+    },
+    {
+      "date": "2024-10-31",
+      "filename": "ndvi_2024-10-31.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2024-10-31.tif"
+    },
+    {
+      "date": "2024-11-16",
+      "filename": "ndvi_2024-11-16.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2024-11-16.tif"
+    },
+    {
+      "date": "2024-12-02",
+      "filename": "ndvi_2024-12-02.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2024-12-02.tif"
+    },
+    {
+      "date": "2024-12-18",
+      "filename": "ndvi_2024-12-18.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2024-12-18.tif"
+    },
+    {
+      "date": "2025-01-01",
+      "filename": "ndvi_2025-01-01.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2025-01-01.tif"
+    },
+    {
+      "date": "2025-01-17",
+      "filename": "ndvi_2025-01-17.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2025-01-17.tif"
+    },
+    {
+      "date": "2025-02-02",
+      "filename": "ndvi_2025-02-02.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2025-02-02.tif"
+    },
+    {
+      "date": "2025-02-18",
+      "filename": "ndvi_2025-02-18.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2025-02-18.tif"
+    },
+    {
+      "date": "2025-03-06",
+      "filename": "ndvi_2025-03-06.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2025-03-06.tif"
+    },
+    {
+      "date": "2025-03-22",
+      "filename": "ndvi_2025-03-22.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2025-03-22.tif"
+    },
+    {
+      "date": "2025-04-07",
+      "filename": "ndvi_2025-04-07.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2025-04-07.tif"
+    },
+    {
+      "date": "2025-04-23",
+      "filename": "ndvi_2025-04-23.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2025-04-23.tif"
+    },
+    {
+      "date": "2025-05-09",
+      "filename": "ndvi_2025-05-09.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2025-05-09.tif"
+    },
+    {
+      "date": "2025-05-25",
+      "filename": "ndvi_2025-05-25.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2025-05-25.tif"
+    },
+    {
+      "date": "2025-06-10",
+      "filename": "ndvi_2025-06-10.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2025-06-10.tif"
+    },
+    {
+      "date": "2025-06-26",
+      "filename": "ndvi_2025-06-26.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2025-06-26.tif"
+    },
+    {
+      "date": "2025-07-12",
+      "filename": "ndvi_2025-07-12.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2025-07-12.tif"
+    },
+    {
+      "date": "2025-07-28",
+      "filename": "ndvi_2025-07-28.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2025-07-28.tif"
+    },
+    {
+      "date": "2025-08-13",
+      "filename": "ndvi_2025-08-13.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2025-08-13.tif"
+    },
+    {
+      "date": "2025-08-29",
+      "filename": "ndvi_2025-08-29.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2025-08-29.tif"
+    },
+    {
+      "date": "2025-09-14",
+      "filename": "ndvi_2025-09-14.tif",
+      "path": "./bloomwatch_data/forecast_training/japan_cherry/ndvi_2025-09-14.tif"
+    }
+  ]
+}

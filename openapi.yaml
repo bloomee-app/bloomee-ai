@@ -1,0 +1,643 @@
+components:
+  schemas:
+    EnhancedForecastDay:
+      description: Single day in forecast with weather and image data
+      properties:
+        bloom_status:
+          title: Bloom Status
+          type: string
+        date:
+          title: Date
+          type: string
+        ndvi_score:
+          title: Ndvi Score
+          type: number
+        satellite_image_available:
+          default: false
+          description: Whether satellite image exists
+          title: Satellite Image Available
+          type: boolean
+        satellite_image_date:
+          anyOf:
+          - type: string
+          - type: 'null'
+          description: Actual date of nearest image
+          title: Satellite Image Date
+        satellite_image_url:
+          anyOf:
+          - type: string
+          - type: 'null'
+          description: URL to get satellite image
+          title: Satellite Image Url
+        weather:
+          anyOf:
+          - $ref: '#/components/schemas/WeatherData'
+          - type: 'null'
+          description: Weather data for the date
+      required:
+      - date
+      - ndvi_score
+      - bloom_status
+      title: EnhancedForecastDay
+      type: object
+    EnhancedForecastResponse:
+      description: Enhanced forecast response with weather and images
+      properties:
+        forecast_days:
+          title: Forecast Days
+          type: integer
+        forecast_start:
+          title: Forecast Start
+          type: string
+        model_type:
+          title: Model Type
+          type: string
+        predictions:
+          items:
+            $ref: '#/components/schemas/EnhancedForecastDay'
+          title: Predictions
+          type: array
+        region:
+          title: Region
+          type: string
+        region_name:
+          title: Region Name
+          type: string
+      required:
+      - region
+      - region_name
+      - forecast_start
+      - forecast_days
+      - model_type
+      - predictions
+      title: EnhancedForecastResponse
+      type: object
+    EnhancedNDVIPredictionResponse:
+      description: Enhanced response with weather data
+      properties:
+        bloom_status:
+          title: Bloom Status
+          type: string
+        confidence:
+          title: Confidence
+          type: string
+        date:
+          title: Date
+          type: string
+        ndvi_score:
+          title: Ndvi Score
+          type: number
+        region:
+          title: Region
+          type: string
+        region_name:
+          title: Region Name
+          type: string
+        satellite_image_available:
+          default: false
+          description: Whether satellite image exists
+          title: Satellite Image Available
+          type: boolean
+        satellite_image_date:
+          anyOf:
+          - type: string
+          - type: 'null'
+          description: Actual date of nearest image
+          title: Satellite Image Date
+        satellite_image_url:
+          anyOf:
+          - type: string
+          - type: 'null'
+          description: URL to get satellite image
+          title: Satellite Image Url
+        weather:
+          anyOf:
+          - $ref: '#/components/schemas/WeatherData'
+          - type: 'null'
+          description: Weather data for the date
+      required:
+      - region
+      - region_name
+      - date
+      - ndvi_score
+      - bloom_status
+      - confidence
+      title: EnhancedNDVIPredictionResponse
+      type: object
+    ErrorResponse:
+      description: Error response model
+      properties:
+        detail:
+          title: Detail
+          type: string
+        error:
+          title: Error
+          type: string
+      required:
+      - error
+      - detail
+      title: ErrorResponse
+      type: object
+    HTTPValidationError:
+      properties:
+        detail:
+          items:
+            $ref: '#/components/schemas/ValidationError'
+          title: Detail
+          type: array
+      title: HTTPValidationError
+      type: object
+    HealthResponse:
+      description: Health check response
+      properties:
+        available_regions:
+          items: {}
+          title: Available Regions
+          type: array
+        full_models:
+          title: Full Models
+          type: integer
+        models_loaded:
+          title: Models Loaded
+          type: integer
+        simple_models:
+          title: Simple Models
+          type: integer
+        status:
+          title: Status
+          type: string
+      required:
+      - status
+      - models_loaded
+      - simple_models
+      - full_models
+      - available_regions
+      title: HealthResponse
+      type: object
+    ValidationError:
+      properties:
+        loc:
+          items:
+            anyOf:
+            - type: string
+            - type: integer
+          title: Location
+          type: array
+        msg:
+          title: Message
+          type: string
+        type:
+          title: Error Type
+          type: string
+      required:
+      - loc
+      - msg
+      - type
+      title: ValidationError
+      type: object
+    WeatherData:
+      description: Weather information for a date
+      properties:
+        humidity_max_percent:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: Max relative humidity (%)
+          title: Humidity Max Percent
+        humidity_mean_percent:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: Mean relative humidity (%)
+          title: Humidity Mean Percent
+        humidity_min_percent:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: Min relative humidity (%)
+          title: Humidity Min Percent
+        precipitation_mm:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: Total precipitation (mm)
+          title: Precipitation Mm
+        rain_mm:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: Total rainfall (mm)
+          title: Rain Mm
+        snowfall_cm:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: Total snowfall (cm)
+          title: Snowfall Cm
+        sunshine_duration_s:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: Sunshine duration (seconds)
+          title: Sunshine Duration S
+        temperature_max_c:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: "Max temperature (\xB0C)"
+          title: Temperature Max C
+        temperature_mean_c:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: "Mean temperature (\xB0C)"
+          title: Temperature Mean C
+        temperature_min_c:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: "Min temperature (\xB0C)"
+          title: Temperature Min C
+        wind_speed_max_kmh:
+          anyOf:
+          - type: number
+          - type: 'null'
+          description: Max wind speed (km/h)
+          title: Wind Speed Max Kmh
+      title: WeatherData
+      type: object
+info:
+  description: API for predicting NDVI (vegetation index) for flower bloom regions
+  title: Blomee NDVI Forecasting API
+  version: 2.0.0
+openapi: 3.1.0
+paths:
+  /:
+    get:
+      description: Root endpoint with API information
+      operationId: root__get
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: Successful Response
+      summary: Root
+      tags:
+      - Info
+  /admin/seed/{region}:
+    post:
+      description: 'Admin only: Seed database with historical NDVI data
+
+
+        CSV must have columns: date, ndvi_mean'
+      operationId: seed_historical_data_admin_seed__region__post
+      parameters:
+      - in: path
+        name: region
+        required: true
+        schema:
+          title: Region
+          type: string
+      - description: Path to CSV file with historical data
+        in: query
+        name: csv_path
+        required: true
+        schema:
+          description: Path to CSV file with historical data
+          title: Csv Path
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: Successful Response
+        '422':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+          description: Validation Error
+      summary: Seed Historical Data
+      tags:
+      - Admin
+  /health:
+    get:
+      description: Health check endpoint with model status
+      operationId: health_check_health_get
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HealthResponse'
+          description: Successful Response
+      summary: Health Check
+      tags:
+      - Health
+  /predict/{region}:
+    get:
+      description: 'Predict NDVI Score with Weather Data & Satellite Images
+
+
+        - Weather data (temperature, humidity, precipitation)
+
+        - Satellite image availability check
+
+        - Enhanced bloom predictions
+
+
+        Parameters:
+
+        - region: Region identifier (e.g., ''usa_cherry_dc'')
+
+        - date: Prediction date (YYYY-MM-DD)
+
+        - use_simple_model: Use fast model (16 features) vs full model (37 features)
+
+        - include_weather: Fetch weather data from Open-Meteo (default: true)
+
+
+        Returns:
+
+        - NDVI prediction
+
+        - Bloom status
+
+        - Weather conditions (if available)
+
+        - Satellite image info'
+      operationId: predict_ndvi_predict__region__get
+      parameters:
+      - in: path
+        name: region
+        required: true
+        schema:
+          title: Region
+          type: string
+      - description: Date for prediction in YYYY-MM-DD format
+        example: '2025-04-15'
+        in: query
+        name: date
+        required: true
+        schema:
+          description: Date for prediction in YYYY-MM-DD format
+          title: Date
+          type: string
+      - description: Use simple 16-feature model (faster, less accurate)
+        in: query
+        name: use_simple_model
+        required: false
+        schema:
+          default: false
+          description: Use simple 16-feature model (faster, less accurate)
+          title: Use Simple Model
+          type: boolean
+      - description: Include weather data from Open-Meteo API
+        in: query
+        name: include_weather
+        required: false
+        schema:
+          default: true
+          description: Include weather data from Open-Meteo API
+          title: Include Weather
+          type: boolean
+      - description: Check satellite image availability
+        in: query
+        name: include_images
+        required: false
+        schema:
+          default: true
+          description: Check satellite image availability
+          title: Include Images
+          type: boolean
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EnhancedNDVIPredictionResponse'
+          description: Successful Response
+        '400':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+          description: Bad Request
+        '404':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+          description: Not Found
+        '422':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+          description: Validation Error
+      summary: Predict Ndvi
+      tags:
+      - Prediction
+  /predict/{region}/forecast:
+    get:
+      description: "Get multi-day NDVI forecast with weather & satellite images\n\n\
+        - Weather data for each forecast day\n- Satellite image availability check\
+        \ for each day\n- Complete forecast data in single request\n\nSimple Model:\
+        \ Uses only time features (fast)\nFull Model: Uses lag/rolling features from\
+        \ previous predictions (accurate)\n\nParameters:\n- region: Region identifier\n\
+        - start_date: Start date for forecast (YYYY-MM-DD)\n- days: Number of days\
+        \ to forecast (1-90)\n- use_simple_model: Set to `true` for faster predictions\n\
+        - include_weather: Fetch weather data for each day (default: true)\n- include_images:\
+        \ Check image availability for each day (default: true)\n\nReturns:\n- List\
+        \ of NDVI predictions with weather and image info for each day\n\nExample\
+        \ Use Case:\nUser selects: \"7-day forecast from 2025-04-01\"\n\u2192 Frontend\
+        \ calls: /predict/usa_cherry_dc/forecast?start_date=2025-04-01&days=7\n\u2192\
+        \ Gets all data at once (NDVI + weather + images)\n\u2192 User can slide through\
+        \ days without additional API call"
+      operationId: forecast_ndvi_predict__region__forecast_get
+      parameters:
+      - in: path
+        name: region
+        required: true
+        schema:
+          title: Region
+          type: string
+      - description: Start date (YYYY-MM-DD)
+        example: '2025-04-01'
+        in: query
+        name: start_date
+        required: true
+        schema:
+          description: Start date (YYYY-MM-DD)
+          title: Start Date
+          type: string
+      - description: Number of days to forecast
+        in: query
+        name: days
+        required: false
+        schema:
+          default: 7
+          description: Number of days to forecast
+          maximum: 90
+          minimum: 1
+          title: Days
+          type: integer
+      - description: Use simple model (faster but less accurate)
+        in: query
+        name: use_simple_model
+        required: false
+        schema:
+          default: false
+          description: Use simple model (faster but less accurate)
+          title: Use Simple Model
+          type: boolean
+      - description: Include weather data for each day
+        in: query
+        name: include_weather
+        required: false
+        schema:
+          default: true
+          description: Include weather data for each day
+          title: Include Weather
+          type: boolean
+      - description: Check satellite image availability for each day
+        in: query
+        name: include_images
+        required: false
+        schema:
+          default: true
+          description: Check satellite image availability for each day
+          title: Include Images
+          type: boolean
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EnhancedForecastResponse'
+          description: Successful Response
+        '422':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+          description: Validation Error
+      summary: Forecast Ndvi
+      tags:
+      - Prediction
+  /predict/{region}/image:
+    get:
+      description: 'Get satellite NDVI image for a region and date
+
+
+        **Note:** MODIS doesn''t capture images daily due to:
+
+        - Cloud cover
+
+        - Satellite orbit (8-day revisit)
+
+
+        This endpoint returns the **nearest available image** within the tolerance
+        window.
+
+
+        Returns:
+
+        - PNG image with NDVI visualization (green=vegetation, red=bare soil)
+
+        - Metadata about actual image date'
+      operationId: get_satellite_image_predict__region__image_get
+      parameters:
+      - in: path
+        name: region
+        required: true
+        schema:
+          title: Region
+          type: string
+      - description: "Requested date (YYYY-MM-DD). Returns nearest available image\
+          \ within \xB17 days"
+        example: '2024-06-15'
+        in: query
+        name: date
+        required: true
+        schema:
+          description: "Requested date (YYYY-MM-DD). Returns nearest available image\
+            \ within \xB17 days"
+          title: Date
+          type: string
+      - description: Maximum days to search for nearest image
+        in: query
+        name: tolerance_days
+        required: false
+        schema:
+          default: 7
+          description: Maximum days to search for nearest image
+          maximum: 30
+          minimum: 1
+          title: Tolerance Days
+          type: integer
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: Successful Response
+        '422':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+          description: Validation Error
+      summary: Get Satellite Image
+      tags:
+      - Satellite Images
+  /predict/{region}/image/metadata:
+    get:
+      description: Get metadata about nearest available satellite image without downloading
+      operationId: get_image_metadata_predict__region__image_metadata_get
+      parameters:
+      - in: path
+        name: region
+        required: true
+        schema:
+          title: Region
+          type: string
+      - description: Date (YYYY-MM-DD)
+        example: '2024-06-15'
+        in: query
+        name: date
+        required: true
+        schema:
+          description: Date (YYYY-MM-DD)
+          title: Date
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: Successful Response
+        '422':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+          description: Validation Error
+      summary: Get Image Metadata
+      tags:
+      - Satellite Images
+  /regions:
+    get:
+      description: List all available regions with model availability
+      operationId: list_regions_regions_get
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: Successful Response
+      summary: List Regions
+      tags:
+      - Info

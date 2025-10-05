@@ -17,6 +17,8 @@ RUN mkdir -p models_simple
 COPY models_simple/ ./models_simple/
 RUN mkdir -p data
 COPY data/ ./data/
+RUN mkdir -p bloomwatch_data
+COPY bloomwatch_data/ ./bloomwatch_data/
 RUN useradd --create-home --shell /bin/bash app && \
     chown -R app:app /app
 USER app
