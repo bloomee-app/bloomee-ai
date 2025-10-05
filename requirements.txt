@@ -1,6 +1,11 @@
+affine==2.4.0
 annotated-types==0.7.0
 anyio==4.11.0
+attrs==25.3.0
+certifi==2025.10.5
 click==8.3.0
+click-plugins==1.1.1.2
+cligj==0.7.2
 fastapi==0.118.0
 h11==0.16.0
 idna==3.10
@@ -9,8 +14,10 @@ numpy==2.3.3
 pandas==2.3.3
 pydantic==2.11.10
 pydantic_core==2.33.2
+pyparsing==3.2.5
 python-dateutil==2.9.0.post0
 pytz==2025.2
+rasterio==1.4.3
 scikit-learn==1.7.2
 scipy==1.16.2
 six==1.17.0
